@@ -227,3 +227,71 @@ footer a {
 }
 
 /* footer */
+/* адаптив */
+@media (max-width: 900px) {
+
+    .container{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .news-block .container-fluid{
+        grid-template-columns: 1fr;
+    }
+
+    .hot-news-grid{
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .news-block__card{
+        grid-template-columns: 200px 1fr;
+    }
+
+}
+
+/* телефон */
+@media (max-width: 600px){
+
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .primary-header .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secondary-header .container-fluid{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .third-header .container-fluid{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hot-news-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .news-block__card{
+        grid-template-columns: 1fr;
+    }
+
+    .news-block__img{
+        border-radius: 30px 30px 0 0;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .news-block__info{
+        border-radius: 0 0 30px 30px;
+    }
+
+    .news-adv__img{
+        height: 200px;
+    }
+
+}
